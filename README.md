@@ -15,7 +15,7 @@
     # Alejandro Hidalgo Badillo
     # Kimberly Atara Lopez Vazquez
     
-# HistGradientBoostingRegressor
+## HistGradientBoostingRegressor
 Es un algoritmo de aprendizaje automático (Machine learning) popular que ha sido implementado para distintos objetivos de forma efectiva. Dado que es un algoritmo basado en histograma es más eficiente tanto en el consumo de memoria como en la velocidad de entrenamiento, es por eso que desarrollaremos nuestro trabajo sobre esta base.
 
 Funciona muy bien en una amplia gama de conjuntos de datos en la práctica (n_muestras >= 10 000).
