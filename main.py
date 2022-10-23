@@ -6,7 +6,7 @@ import sys
 import time
 to_drop = ["Fecha entrega del Informe", "Piso", "Posición", "Número de estacionamiento", "Número de frentes", "Elevador"]
 df1 = pd.DataFrame(pd.read_excel('./dataset_formatted.xlsx'))
-frames = [df1, df1.copy(), df1.copy(), df1.copy() ]
+frames = [df1, df1.copy(), df1.copy(), df1.copy(), df1.copy(), df1.copy()]
 df1 = pd.concat(frames)
 df2 = pd.DataFrame(pd.read_excel('./dataset.xlsx')).drop(to_drop, axis='columns')
 df3 = df1.drop( to_drop , axis='columns')
@@ -95,7 +95,6 @@ else:
         "Método Representado":"comparacion de mercado (directo)", 
         "Área Terreno":100, 
         "Área Construcción":227,
-        "dormitorio":3
     },
     {
         "Fecha entrega del Informe": "",
@@ -117,7 +116,6 @@ else:
         "Método Representado":"comparacion de mercado (directo)", 
         "Área Terreno":100, 
         "Área Construcción":227,
-        "dormitorio":3
     }
     ]
 
@@ -175,3 +173,9 @@ filepath = Path('./out.xlsx')
 filepath.parent.mkdir(parents=True, exist_ok=True)  
 original_df.to_excel(filepath, index=False,encoding='utf-8-sig') 
 # print(original_df)
+
+
+# from sklearn.metrics import log_loss
+
+# logloss = log_loss(y_test, model.predict_proba(X_test))
+# print(logloss)
